@@ -46,15 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(s => observer.observe(s));
 
-    /* ===== NOW PLAYING ANIMATION ===== */
-    const progressFill = document.querySelector('.np-progress-fill');
-    if (progressFill) {
-        let pct = 27;
-        setInterval(() => {
-            pct += 0.3;
-            if (pct > 100) pct = 0;
-            progressFill.style.width = pct + '%';
-        }, 500);
-    }
-
 });
